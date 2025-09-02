@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	//init array
+	//init array arrays have constant size
 	var intArray [10]int = [10]int{ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 } //you can init array with some kind of value
 	fmt.Println("array: ", intArray)
 
@@ -39,4 +39,24 @@ func main() {
 	
 	copiedArray[0] = 11 // it is a copy not a link
 	fmt.Println("\narray to copy:", arrayToCopy, "\ncopied array:", copiedArray)
+
+	//okay there are also non-constant size arrays named slice
+	//init
+	//you can create them using empty braskets
+	var slice = []int{1, 2, 3}
+	fmt.Println("\nslice via emty braskets:", slice)
+
+	//also there initialisation usin make(type, size, default_value)
+	var makeSlice = make([]int, 3)
+	fmt.Println("\nslice via make:", makeSlice)
+
+	//also you can slice array to init new slice
+	var arrayToSlice = [...]int{1, 2, 3, 4}
+	var slicedArray = arrayToSlice[1:]
+	fmt.Println("\nslice from array:", slicedArray)
+	//slice give you ability to change size of it
+	makeSlice = append(makeSlice, 1337)
+	fmt.Println("\nslice via make that got new value:", makeSlice)
+	//also slice can erase values
+	fmt.Println("\nslice via make that got new value and erased first 3 values:", makeSlice[3:])
 }
