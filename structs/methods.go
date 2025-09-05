@@ -26,7 +26,7 @@ func (ss *SomeStruct) someMethWithPointer() (output int) { //there we'll use poi
 }
 
 func we_will_talk_about_METHODS() {
-	fmt.Println("--------------\nTODAY WE'LL TALKIN BOUT METHODS--------------\n")
+	fmt.Println("--------------\nTODAY WE'LL TALKIN BOUT METHODS\n")
 
 	structExemp := SomeStruct{}
 

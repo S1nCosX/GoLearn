@@ -20,7 +20,7 @@ type DataWithEmbeddedPerson struct {
 }
 
 func we_will_talk_about_STRUCTS_WITHIN_STRUCTS() {
-	fmt.Println("--------------\nTODAY WE'LL TALKIN BOUT STRUCTS WITHIN OTHER STRUCTS--------------\n")
+	fmt.Println("--------------\nTODAY WE'LL TALKIN BOUT STRUCTS WITHIN OTHER STRUCTS\n")
 	personExemp := Person{name: "Biba", age: 100}
 	fmt.Println("we have person:", personExemp)
 	
@@ -37,7 +37,7 @@ type Node struct{
 } // kinda list node
 
 func we_will_talk_about_POINTERS_ON_STRUCTS_WITHIN_STRUCTS() {
-	fmt.Println("--------------\nTODAY WE'LL TALKIN BOUT POINTERS ON STRUCTS WITHIN OTHER STRUCTS--------------\n")
+	fmt.Println("--------------\nTODAY WE'LL TALKIN BOUT POINTERS ON STRUCTS WITHIN OTHER STRUCTS\n")
 	first := Node{value: 1}
 	second := Node{value: 2}
 	first.next = &second
