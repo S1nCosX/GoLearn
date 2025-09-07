@@ -10,5 +10,4 @@ func main() {
 		"Oleg": 1234231441,
 	}
 	fmt.Println("map", people)
-	
 }
